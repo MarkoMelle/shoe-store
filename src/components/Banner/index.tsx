@@ -1,7 +1,9 @@
+import banner from "../../public/img/banner.jpg";
+
 const Banner = () => (
   <div className="banner">
     <img
-      src="/img/banner.jpg"
+      src={banner}
       className="img-fluid"
       alt="К весне готовы!"
     ></img>

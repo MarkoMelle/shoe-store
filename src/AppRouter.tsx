@@ -8,7 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import CatalogItemPage from "./pages/CatalogItemPage";
 
 const AppRouter = () => (
-  <Router>
+  <Router basename="/shoe-store">
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/catalog" element={<CatalogPage />} />
