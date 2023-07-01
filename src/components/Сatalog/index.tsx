@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
