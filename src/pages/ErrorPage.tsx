@@ -10,8 +10,8 @@ const ErrorPage = () => {
           <div className="col">
             <Banner />
             <section className="top-sales">
-              <h2 className="text-center">Страница не найдена</h2>
-              <p>Извините, такая страница не найдена!</p>
+              <h2 className="text-center">Page Not Found</h2>
+              <p>Sorry, the requested page was not found!</p>
             </section>
           </div>
         </div>

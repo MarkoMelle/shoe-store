@@ -19,7 +19,7 @@ const ProductQuantity: React.FC = () => {
 
   return (
     <p>
-      Количество:
+      Quantity:
       <span className="btn-group btn-group-sm pl-2">
         <button
           className="btn btn-secondary"

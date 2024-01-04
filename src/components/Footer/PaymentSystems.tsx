@@ -1,7 +1,7 @@
 const PaymentSystems = () => (
   <div className="col">
     <section>
-      <h5>Принимаем к оплате:</h5>
+      <h5>Accepted payment methods:</h5>
       <div className="footer-pay">
         <div className="footer-pay-systems footer-pay-systems-paypal"></div>
         <div className="footer-pay-systems footer-pay-systems-master-card"></div>

@@ -4,10 +4,10 @@ import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const location = useLocation();
   const pages = [
-    { path: "/", name: "Главная" },
-    { path: "/catalog", name: "Каталог" },
-    { path: "/about", name: "О магазине" },
-    { path: "/contacts", name: "Контакты" },
+    { path: "/", name: "Home" },
+    { path: "/catalog", name: "Catalog" },
+    { path: "/about", name: "About" },
+    { path: "/contacts", name: "Contacts" },
   ];
 
   return (

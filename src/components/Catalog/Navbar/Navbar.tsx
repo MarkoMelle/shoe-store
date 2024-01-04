@@ -24,13 +24,13 @@ const Navbar: React.FC<NavbarProps> = ({ categories }) => {
       <li className="nav-item">
         <Link
           to="#"
-          className={activeCategory === "Все" ? "nav-link active" : "nav-link"}
+          className={activeCategory === "All" ? "nav-link active" : "nav-link"}
           onClick={(e) => {
             e.preventDefault();
-            handleClick("Все");
+            handleClick("All");
           }}
         >
-          Все
+          All
         </Link>
       </li>
       {categories.map((category) => (

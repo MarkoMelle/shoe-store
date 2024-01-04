@@ -27,25 +27,25 @@ const OrderForm = () => {
 
   return (
     <section className="order">
-      <h2 className="text-center">Оформить заказ</h2>
+      <h2 className="text-center">Place an Order</h2>
       <div className="card" style={{ maxWidth: "30rem", margin: "0 auto" }}>
         <form className="card-body" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="phone">Телефон</label>
+            <label htmlFor="phone">Phone</label>
             <input
               className="form-control"
               id="phone"
-              placeholder="Ваш телефон"
+              placeholder="Your phone number"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
           </div>
           <div className="form-group">
-            <label htmlFor="address">Адрес доставки</label>
+            <label htmlFor="address">Delivery Address</label>
             <input
               className="form-control"
               id="address"
-              placeholder="Адрес доставки"
+              placeholder="Delivery address"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
             />
@@ -59,7 +59,7 @@ const OrderForm = () => {
               onChange={(e) => setAgreement(e.target.checked)}
             />
             <label className="form-check-label" htmlFor="agreement">
-              Согласен с правилами доставки
+              Agree to Delivery Terms
             </label>
           </div>
           <button
@@ -67,7 +67,7 @@ const OrderForm = () => {
             className="btn btn-outline-secondary"
             disabled={!agreement}
           >
-            Оформить
+            Place Order
           </button>
         </form>
       </div>

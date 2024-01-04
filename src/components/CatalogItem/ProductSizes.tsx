@@ -7,7 +7,7 @@ interface ProductSizesProps {
 
 const ProductSizes: React.FC<ProductSizesProps> = ({ sizes, onSelectSize }) => (
   <p>
-    Размеры в наличии:
+    Available sizes:
     {sizes.map((size) => (
       <span
         key={size.value}

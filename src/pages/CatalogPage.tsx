@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import Catalog from "../components/Сatalog";
+import Catalog from "../components/Catalog";
 import { useAppSelector } from "../hooks";
 
 const CatalogPage = () => {

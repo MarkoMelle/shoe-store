@@ -72,19 +72,19 @@ const Catalog: React.FC<{
 
   return (
     <section className="catalog">
-      <h2 className="text-center">Каталог</h2>
+      <h2 className="text-center">Catalog</h2>
       {isCatalogPage && (
         <form className="catalog-search-form form-inline">
           <input
             className="form-control"
-            placeholder="Поиск"
+            placeholder="Search"
             value={query}
             onChange={handleOnChange}
           ></input>
         </form>
       )}
       {status === "loading" && <Preloader />}
-      {status === "failed" && <h3>Что-то пошло не так...</h3>}
+      {status === "failed" && <h3>Something went wrong...</h3>}
       {status === "succeeded" && <Navbar categories={categories} />}
       <div className="row">
         {status === "succeeded" &&
@@ -93,7 +93,7 @@ const Catalog: React.FC<{
           ))}
       </div>
       {status === "succeeded" && products.length === 0 && (
-        <h3>Ничего не найдено</h3>
+        <h3>Nothing found</h3>
       )}
       {status === "succeeded" && products.length !== 0 && (
         <div className="text-center">
@@ -101,7 +101,7 @@ const Catalog: React.FC<{
             className="btn btn-outline-primary"
             onClick={() => dispatch(loadMoreProducts())}
           >
-            Загрузить ещё
+            Load More
           </button>
         </div>
       )}

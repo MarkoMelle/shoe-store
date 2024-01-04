@@ -17,9 +17,9 @@ const TopSales: React.FC = () => {
 
   return (
     <section className="top-sales">
-      <h2 className="text-center">Хиты продаж!</h2>
+      <h2 className="text-center">Top Sales!</h2>
       {status === "loading" && <Preloader />}
-      {status === "failed" && <h3>Что-то пошло не так...</h3>}
+      {status === "failed" && <h3>Something went wrong...</h3>}
       <div className="row">
         {status === "succeeded" &&
           sales.map((product) => <Card key={product.id} {...product} />)}

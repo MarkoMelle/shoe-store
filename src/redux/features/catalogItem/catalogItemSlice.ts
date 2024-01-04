@@ -1,8 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { apiClient } from "../../../api/apiClient";
 
-
-
 export interface ProductState {
   status: "idle" | "loading" | "succeeded" | "failed";
   error: string | null | undefined;
@@ -62,19 +60,19 @@ export const fetchProductById = createAsyncThunk<
     const response = await apiClient.getItemById(productId);
     if (!response.ok) {
       console.error("Response not OK, status:", response.status);
-      throw new Error("Не удалось загрузить товар");
+      throw new Error("Failed to load product");
     }
     const data: ApiResponse = await response.json();
     return {
       name: data.title,
       imageSrc: data.images[0],
       details: [
-        ["Артикул", data.sku],
-        ["Производитель", data.manufacturer],
-        ["Цвет", data.color],
-        ["Материал", data.material],
-        ["Сезон", data.season],
-        ["Повод", data.reason],
+        ["SKU", data.sku],
+        ["Manufacturer", data.manufacturer],
+        ["Color", data.color],
+        ["Material", data.material],
+        ["Season", data.season],
+        ["Reason", data.reason],
       ],
       sizes: data.sizes
         .filter((size) => size.available)

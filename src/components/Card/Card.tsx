@@ -21,9 +21,9 @@ const Card: React.FC<CardProps> = ({
       <img src={imageUrl} className="card-img-top img-fluid" alt={title} />
       <div className="card-body">
         <p className="card-text">{title}</p>
-        <p className="card-text">{price} руб.</p>
+        <p className="card-text">{price} rub.</p>
         <Link to={`/products/${id}`} className="btn btn-outline-primary">
-          Заказать
+          Order
         </Link>
       </div>
     </div>

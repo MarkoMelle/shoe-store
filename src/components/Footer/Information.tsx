@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 const Information = () => (
   <div className="col">
     <section>
-      <h5>Информация</h5>
+      <h5>Information</h5>
       <ul className="nav flex-column">
         <li className="nav-item">
           <Link to="/about" className="nav-link">
-            О магазине
+            About
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/catalog" className="nav-link">
-            Каталог
+            Catalog
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/contacts" className="nav-link">
-            Контакты
+            Contacts
           </Link>
         </li>
       </ul>

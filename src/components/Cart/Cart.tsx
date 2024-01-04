@@ -17,17 +17,17 @@ const Cart = () => {
 
   return (
     <section className="cart">
-      <h2 className="text-center">Корзина</h2>
+      <h2 className="text-center">Cart</h2>
       <table className="table table-bordered">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Название</th>
-            <th scope="col">Размер</th>
-            <th scope="col">Кол-во</th>
-            <th scope="col">Стоимость</th>
-            <th scope="col">Итого</th>
-            <th scope="col">Действия</th>
+            <th scope="col">Name</th>
+            <th scope="col">Size</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -39,23 +39,23 @@ const Cart = () => {
               </td>
               <td>{item.size}</td>
               <td>{item.quantity}</td>
-              <td>{item.price} руб.</td>
-              <td>{item.price * item.quantity} руб.</td>
+              <td>{item.price} rub.</td>
+              <td>{item.price * item.quantity} rub.</td>
               <td>
                 <button
                   className="btn btn-outline-danger btn-sm"
                   onClick={() => handleRemove(item)}
                 >
-                  Удалить
+                  Remove
                 </button>
               </td>
             </tr>
           ))}
           <tr>
             <td colSpan={5} className="text-right">
-              Общая стоимость
+              Total Cost
             </td>
-            <td>{totalCost} руб.</td>
+            <td>{totalCost} rub.</td>
           </tr>
         </tbody>
       </table>

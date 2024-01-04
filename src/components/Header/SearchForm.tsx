@@ -23,7 +23,7 @@ const SearchForm = () => {
     >
       <input
         className="form-control"
-        placeholder="Поиск"
+        placeholder="Search"
         onChange={(e) => {
           dispatch(changeSearchField(e.target.value));
         }}

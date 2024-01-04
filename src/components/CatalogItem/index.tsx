@@ -38,8 +38,8 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ id }) => {
   return (
     <section className="catalog-item">
       {status === "loading" && <Preloader />}
-      {status === "failed" && <div>Что-то пошло не так...</div>}
-      {status === "succeeded" && !product && <div>Товар не найден</div>}
+      {status === "failed" && <div>Something went wrong...</div>}
+      {status === "succeeded" && !product && <div>Product not found</div>}
       {status === "succeeded" && product && (
         <>
           <h2 className="text-center">{product.name}</h2>
@@ -54,7 +54,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ id }) => {
                     onSelectSize={selectSize}
                   />
                 ) : (
-                  <p>Нет в наличии</p>
+                  <p>Out of stock</p>
                 )}
                 {product.sizes.length !== 0 && <ProductQuantity />}
               </div>

@@ -5,9 +5,9 @@ const Banner = () => (
     <img
       src={banner}
       className="img-fluid"
-      alt="К весне готовы!"
+      alt="Ready for Spring!"
     ></img>
-    <h2 className="banner-header">К весне готовы!</h2>
+    <h2 className="banner-header">Ready for Spring!</h2>
   </div>
 );
 

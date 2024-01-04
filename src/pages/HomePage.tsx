@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import TopSales from "../components/TopSales";
-import Catalog from "../components/Сatalog";
+import Catalog from "../components/Catalog";
 const HomePage = () => {
   return (
     <>

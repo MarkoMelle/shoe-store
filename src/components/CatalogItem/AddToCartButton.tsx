@@ -44,7 +44,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({
       disabled={disabled}
       onClick={handleClick}
     >
-      В корзину
+      Add to Cart
     </button>
   );
 };

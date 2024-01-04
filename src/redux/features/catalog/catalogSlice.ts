@@ -29,7 +29,7 @@ interface catalogState {
 
 const initialState: catalogState = {
   products: [],
-  activeCategory: "Все",
+  activeCategory: "All",
   status: "idle",
   categories: [],
   error: null,
