@@ -17,7 +17,7 @@ This project is a shoe store web application, demonstrating my development skill
 
 ## Live Demo
 
-[https://markomelle.github.io/shoe-store](#) - Link to the live demo of the project hosted on GitHub Pages or similar platform.
+https://markomelle.github.io/shoe-store - Link to the live demo of the project hosted on GitHub Pages or similar platform.
 
 ## Screenshots
 
