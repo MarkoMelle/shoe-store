@@ -1,4 +1,5 @@
-[![shoe-store](https://github.com/MarkoMelle/shoe-store/actions/workflows/main.yml/badge.svg)](https://github.com/MarkoMelle/shoe-store/actions/workflows/main.yml)
+[![shoe-store](https://github.com/MarkoMelle/shoe-store/actions/workflows/main.yml/badge.svg)](https://github.com/MarkoMelle/shoe-store/actions/workflows/main.yml)  
+https://markomelle.github.io/shoe-store
 # Shoe Store - React & Redux Project
 
 ## Overview
@@ -12,12 +13,6 @@ This project is a shoe store web application, demonstrating my development skill
 - **Responsive Design**: Fully optimized for a seamless experience on both desktop and mobile devices.
 
 ## Technologies Used:
-
-
-
-## Live Demo
-
-https://markomelle.github.io/shoe-store - Link to the live demo of the project hosted on GitHub Pages or similar platform.
 
 ## Screenshots
 
